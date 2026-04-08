@@ -2,7 +2,7 @@
 
 A collection of small Java example programs and exercises demonstrating basic Java concepts (I/O, control flow, classes, exceptions, collections, date/time, and simple algorithms).
 
-All source files are in the `src/` directory and are single-class Java programs intended to be compiled and run individually.
+All source files are in the `src/` directory and are single-class Java programs intended to be compiled and run individually. A `.gitignore` file is included to ignore build output and editor files.
 
 ## Prerequisites
 
@@ -36,6 +36,7 @@ javac src/Palindrome.java && java -cp src Palindrome
 ## Programs (in `src/`)
 
 - `BankTransactionSystem.java` — Simple bank menu: deposit, withdraw, and balance check (console input).
+- `CoinTossing100Times.java` — Read an array and a target, then print all pairs of elements whose sum equals the target (prints each matching pair on its own line).
 - `CubeStaticMethod.java` — Static method example to compute the cube of a number.
 - `DateTimeFormatterExample.java` — Parse and reformat a date/time string using `java.time`.
 - `DistanceBetweenTwoPoints.java` — Compute Euclidean distance for pairs of points.
@@ -75,6 +76,20 @@ javac -d out src/BankTransactionSystem.java
 # 50   (deposit amount)
 # Expected printed updated balance: Updated Balance: 150.0
 java -cp out BankTransactionSystem
+```
+
+CoinTossing100Times (sample run):
+
+```bash
+# compile
+javac -d out src/CoinTossing100Times.java
+# run with input: n (size), n numbers, then target sum
+# Example: array [1,2,3,4,5], target 6
+printf "5\n1 2 3 4 5\n6\n" | java -cp out CoinTossing100Times
+# Expected output lines (order may vary):
+# 1, 5
+# 2, 4
+# 3, 3
 ```
 
 Note: these programs read from standard input; you can pipe input or type interactively.
