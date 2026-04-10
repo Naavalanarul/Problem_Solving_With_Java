@@ -2,7 +2,9 @@ import java.util.Random;
 
 public class SixSidedDiceRoll {
     public static void main(String[] args) {
+
         Random random = new Random();
+
         int dice1, dice2, sum;
         int tries = 0;
 

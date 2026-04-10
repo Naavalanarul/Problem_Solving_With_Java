@@ -8,7 +8,7 @@ public class BankTransactionSystem{
         System.out.println("Enter initial balance");
         float balance = scanner.nextInt();
 
-        System.out.printf("1. Deposit\n2. Withdraw\n3. Balance Check\n");
+        System.out.print("1. Deposit\n2. Withdraw\n3. Balance Check\n");
 
         int choice = scanner.nextInt();
 
@@ -40,7 +40,7 @@ public class BankTransactionSystem{
                 break;
 
             default:
-                System.out.printf("Invalid Choice");
+                System.out.print("Invalid Choice");
                 break;
         }
 

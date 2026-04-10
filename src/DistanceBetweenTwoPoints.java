@@ -29,7 +29,7 @@ class PointDistance{
 
 public class DistanceBetweenTwoPoints{
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         PointDistance pd1 = new PointDistance();
         PointDistance pd2 = new PointDistance();

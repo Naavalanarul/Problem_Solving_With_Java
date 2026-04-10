@@ -4,7 +4,7 @@ import java.util.*;
 
 public class DateTimeFormatterExample{
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         DateTimeFormatter inputFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 

@@ -18,7 +18,6 @@ public class CoinTossing100Times {
             }
         }
 
-        // Print the final results
         System.out.println("Simulation Results for " + totalTosses + " tosses:");
         System.out.println("Number of Heads: " + heads);
         System.out.println("Number of Tails: " + tails);
