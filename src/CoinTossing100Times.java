@@ -1,28 +1,26 @@
-import java.util.Scanner;
+import java.util.Random;
 
-public class CoinTossing100Times{
+public class CoinTossing100Times {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Random random = new Random();
 
-        // 1. Get the array size
-        int n = sc.nextInt();
-        int[] arr = new int[n];
+        int heads = 0;
+        int tails = 0;
+        int totalTosses = 100;
 
-        // 2. Get the array elements
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+        for (int i = 0; i < totalTosses; i++) {
+            int result = random.nextInt(2);
 
-        // 3. Get the target sum
-        int target = sc.nextInt();
-
-        // 4. Find and print pairs
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (arr[i] + arr[j] == target) {
-                    System.out.println(arr[i] + ", " + arr[j]);
-                }
+            if (result == 0) {
+                heads++;
+            } else {
+                tails++;
             }
         }
+
+        // Print the final results
+        System.out.println("Simulation Results for " + totalTosses + " tosses:");
+        System.out.println("Number of Heads: " + heads);
+        System.out.println("Number of Tails: " + tails);
     }
 }
